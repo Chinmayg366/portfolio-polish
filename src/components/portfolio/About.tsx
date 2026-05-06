@@ -1,15 +1,26 @@
 import { portfolioData } from "@/data/portfolio";
+import chinmayPhoto from "@/assets/chinmay.jpg";
 
 const About = () => {
   return (
     <section id="about" className="py-24 md:py-32 border-t border-border">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-12 gap-10">
-          <div className="md:col-span-4 reveal">
-            <div className="mono-label mb-3">// 01 — about</div>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
-              A bit about me.
-            </h2>
+          <div className="md:col-span-4 reveal space-y-6">
+            <div>
+              <div className="mono-label mb-3">// 01 — about</div>
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+                A bit about me.
+              </h2>
+            </div>
+            <div className="relative w-48 sm:w-56 md:w-full max-w-xs">
+              <div className="absolute inset-0 translate-x-2 translate-y-2 border border-border rounded-md" aria-hidden="true" />
+              <img
+                src={chinmayPhoto}
+                alt="Portrait of Chinmay Gurav"
+                className="relative w-full h-auto rounded-md border border-border object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
           </div>
           <div className="md:col-span-8 space-y-4 reveal">
             {portfolioData.about.map((p, i) => (
