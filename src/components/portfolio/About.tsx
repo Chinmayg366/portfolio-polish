@@ -18,7 +18,7 @@ const About = () => {
               <img
                 src={chinmayPhoto}
                 alt="Portrait of Chinmay Gurav"
-                className="relative w-full h-auto rounded-md border border-border object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="relative w-full h-auto rounded-md border border-border object-cover"
               />
             </div>
           </div>
